@@ -116,23 +116,37 @@ No AWS account or credentials needed — the bundled MCP server only reads publi
 
 ### Steps
 
-1. Get the source code (choose one):
+Choose one of the three installation methods:
 
-   **Option A — Clone with Git:**
-   ```bash
-   git clone git@git.example.com:example-org/kiro-study-buddy.git
-   ```
+**Option A — Install directly from GitHub (recommended):**
 
-   **Option B — Download ZIP (no Git required):**
-   1. Open the repository in GitLab
-   2. Select the **Code** button (or the download icon)
-   3. Choose **Download source code** → **zip**
-   4. Extract the downloaded archive to a folder on your machine
+1. Open Kiro
+2. Open the **Powers panel** from the sidebar
+3. Choose **Add power from GitHub URL**
+4. Enter: `https://github.com/aws-samples/sample-kiro-study-buddy`
 
-2. Open Kiro
-3. Open the **Powers panel** from the sidebar
-4. Choose **Add power from Local Path**
-5. Select the cloned folder (the one with `POWER.md` at its root)
+**Option B — Clone with Git:**
+
+```bash
+git clone https://github.com/aws-samples/sample-kiro-study-buddy.git
+```
+
+Then:
+1. Open Kiro
+2. Open the **Powers panel** from the sidebar
+3. Choose **Add power from Local Path**
+4. Select the cloned folder (the one with `POWER.md` at its root)
+
+**Option C — Download ZIP (no Git required):**
+
+1. Open the [repository on GitHub](https://github.com/aws-samples/sample-kiro-study-buddy)
+2. Select the **Code** button
+3. Choose **Download ZIP**
+4. Extract the downloaded archive to a folder on your machine
+5. Open Kiro
+6. Open the **Powers panel** from the sidebar
+7. Choose **Add power from Local Path**
+8. Select the extracted folder (the one with `POWER.md` at its root)
 
 ### Verify the installation
 
