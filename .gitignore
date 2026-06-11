@@ -1,0 +1,65 @@
+# -----------------------------------------------------------------------------
+# .gitignore for the SAA-C03 Study Buddy Kiro power
+#
+# This project ships markdown steering files and an MCP config (no source code,
+# no build artifacts). The rules below target OS/editor noise, local Kiro
+# workspace state, and an accidental-secret safety net.
+# -----------------------------------------------------------------------------
+
+# ---- Operating system files -------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+*~
+
+# ---- Editors / IDEs ---------------------------------------------------------
+# VS Code
+.vscode/
+
+# JetBrains
+.idea/
+*.iml
+
+# Vim / Emacs / generic swap files
+*.swp
+*.swo
+*.swn
+\#*\#
+.\#*
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# ---- Kiro local workspace state --------------------------------------------
+# Specs, hooks, and settings generated while using Kiro on this repo are
+# personal workspace state and should not be shipped with the power.
+.kiro/specs/
+.kiro/hooks/
+.kiro/settings/
+
+# ---- Secrets safety net -----------------------------------------------------
+# This project does not need credentials, but guard against accidents.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials
+credentials.json
+
+# ---- User-specific local data -----------------------------------------------
+# Exam result transcripts and template files are personal/local content.
+templates/
+ExamResults/
+
+# ---- Logs and temp files ----------------------------------------------------
+*.log
+logs/
+tmp/
+temp/
